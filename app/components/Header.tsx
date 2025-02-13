@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="w-full py-5 px-5 flex justify-between items-center relative z-50 bg-background bg-opacity-15">
+    <header className="w-full py-5 px-5 flex justify-between items-center relative z-50">
       <h1 className="text-lg font-bold">aadn-fitness</h1>
 
       <nav>
