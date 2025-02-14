@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Link from "next/link";
 import EllipseFade from "./components/Ellipse";
 import { ServiceCard } from "./components/ui/ServiceCard";
+import { PlanCard } from "./components/ui/PlanCard";
 
 export default function Home() {
   return (
@@ -129,18 +130,96 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex-grow w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-center mt-10">
-          <ServiceCard
-            firstImgUrl="https://i.pinimg.com/736x/7a/1f/02/7a1f0261de4715fd78874ac0d42d55b1.jpg"
-            secondImgUrl="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWlodTF3MjJ3NnJiY3Rlc2J0ZmE0c28yeWoxc3gxY2VtZzA5ejF1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/syEfLvksYQnmM/giphy.gif"
-            title="Musculação"
-            description="Aqui na AADN-fitness você encontra os melhores equipamentos da região para fazer o melhor treino possível"
-          />
-          <ServiceCard />
-          <ServiceCard />
+        <div className="w-full flex-grow flex justify-center items-center">
+          <div className="w-full flex flex-row max-sm:flex-col gap-6 overflow-x-auto snap-mandatory snap-x mt-10 px-4 py-6 no-scrollbar [&::-webkit-scrollbar]:hidden xl:overflow-x-visible xl:justify-center">
+            <div className="snap-center flex-shrink-0">
+              <ServiceCard
+                firstImgUrl="https://i.pinimg.com/736x/7a/1f/02/7a1f0261de4715fd78874ac0d42d55b1.jpg"
+                secondImgUrl="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWlodTF3MjJ3NnJiY3Rlc2J0ZmE0c28yeWoxc3gxY2VtZzA5ejF1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/syEfLvksYQnmM/giphy.gif"
+                title="Musculação"
+                description="Aqui na aadn-fitness você encontra os melhores equipamentos da região para fazer o melhor treino possível."
+              />
+            </div>
+            <div className="snap-center flex-shrink-0">
+              <ServiceCard
+                firstImgUrl="https://i.pinimg.com/736x/72/1c/2c/721c2c2e6a598447efe47fdc98903eb2.jpg"
+                secondImgUrl="https://media.giphy.com/media/bfyaKzR4fj9C3s/giphy.gif"
+                title="Aula de step"
+                description="Passos dinâmicos e coreografias para trabalhar o corpo inteiro de forma divertida."
+              />
+            </div>
+            <div className="snap-center flex-shrink-0">
+              <ServiceCard
+                firstImgUrl="https://i.pinimg.com/736x/da/77/6f/da776f3aa046866ad2329ecca5e84868.jpg"
+                secondImgUrl="https://media.giphy.com/media/l1KtXmfi5H1Yb2hyQ/giphy.gif"
+                title="Funcional de glúteo"
+                description="Exercícios intensos para fortalecer e definir glúteos, promovendo resultados visíveis."
+              />
+            </div>
+            <div className="snap-center flex-shrink-0">
+              <ServiceCard
+                firstImgUrl="https://i.pinimg.com/736x/df/29/d7/df29d754317e7bcef8a77031076ce70d.jpg"
+                secondImgUrl="https://media.giphy.com/media/xT9KVHFtfbJ4Ku6yc4/giphy.gif"
+                title="Funcional coletivo"
+                description="Treinos em grupo focados em diferentes capacidades físicas, trazendo motivação extra."
+              />
+            </div>
+          </div>
         </div>
 
         <EllipseFade className="top-1/2 -right-20" size={150} />
+      </section>
+
+      <section
+        className="w-full h-screen relative px-5 lg:px-20 -top-10"
+        id="plans"
+      >
+        <div className="w-full flex flex-col items-center justify-center">
+          <h2 className="bg-clip-text text-transparent max-sm:text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-3xl md:text-4xl lg:text-5xl font-sans py-2 md:py-10 font-bold tracking-tight">
+            Nossos{" "}
+            <span className="bg-clip-text text-transparent max-sm:text-center bg-gradient-to-b from-orange-900 to-orange-700 dark:from-orange-600 dark:to-orange-500">
+              Planos
+            </span>
+          </h2>
+          <p className="text-lg text-neutral-400 max-w-2xl text-center">
+            Escolha o plano que melhor se encaixa em sua rotina e objetivos.
+          </p>
+        </div>
+
+        <div className="flex justify-center items-center gap-3 mt-10 w-full">
+          <PlanCard
+            title="Individual"
+            value="R$ 85/mês"
+            description="Plano ideal para quem está começando"
+            features={[
+              "Acesso à musculação",
+              "Aulas de step",
+              "Acompanhamento de treino",
+            ]}
+          />
+          <PlanCard
+            title="Trimestral"
+            value="R$ 70/mês"
+            secondaryValue="- R$ 210,00"
+            description="Plano ideal para quem está começando"
+            features={[
+              "Acesso à musculação",
+              "Aulas de step",
+              "Acompanhamento de treino",
+            ]}
+          />
+          <PlanCard
+            title="Anual"
+            value="R$ 60/mês"
+            secondaryValue="- R$ 720,00"
+            description="Plano ideal para quem está começando"
+            features={[
+              "Acesso à musculação",
+              "Aulas de step",
+              "Acompanhamento de treino",
+            ]}
+          />
+        </div>
       </section>
 
       {/* EllipseFades */}
