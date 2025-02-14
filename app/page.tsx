@@ -12,7 +12,10 @@ export default function Home() {
         <Header />
       </div>
 
-      <section className="w-full h-screen flex flex-col items-center justify-center relative px-5 sm:pb-[5vh] xl:px-20">
+      <section
+        className="w-full h-screen flex flex-col items-center justify-center relative px-5 sm:pb-[5vh] xl:px-20"
+        id="home"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Text Section */}
           <div className="text-center md:text-left space-y-6">
@@ -116,7 +119,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full h-screen relative px-5 lg:px-20" id="services">
+      <section
+        className="w-full py-5 relative px-5 lg:px-20 mb-20"
+        id="services"
+      >
         <div className="w-full flex flex-col items-center justify-center">
           <h2 className="bg-clip-text text-transparent max-sm:text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-3xl md:text-4xl lg:text-5xl font-sans py-2 md:py-10 font-bold tracking-tight">
             Nossos{" "}
@@ -131,7 +137,7 @@ export default function Home() {
         </div>
 
         <div className="w-full flex-grow flex justify-center items-center">
-          <div className="w-full flex flex-row max-sm:flex-col gap-6 overflow-x-auto snap-mandatory snap-x mt-10 px-4 py-6 no-scrollbar [&::-webkit-scrollbar]:hidden xl:overflow-x-visible xl:justify-center">
+          <div className="w-full flex flex-row max-sm:flex-col gap-6 overflow-x-auto snap-mandatory snap-x mt-10 px-4 py-6 no-scrollbar [&::-webkit-scrollbar]:hidden 2xl:overflow-x-visible 2xl:justify-center">
             <div className="snap-center flex-shrink-0">
               <ServiceCard
                 firstImgUrl="https://i.pinimg.com/736x/7a/1f/02/7a1f0261de4715fd78874ac0d42d55b1.jpg"
@@ -171,7 +177,7 @@ export default function Home() {
       </section>
 
       <section
-        className="w-full h-screen relative px-5 lg:px-20 -top-10"
+        className="w-full min-h-screen relative px-5 lg:px-20 -top-10"
         id="plans"
       >
         <div className="w-full flex flex-col items-center justify-center">
@@ -186,7 +192,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex justify-center items-center gap-3 mt-10 w-full">
+        <div className="flex justify-center items-center max-sm:flex-col gap-3 mt-10 w-full">
           <PlanCard
             title="Individual"
             value="R$ 85/mês"
