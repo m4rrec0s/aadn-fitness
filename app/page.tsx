@@ -415,7 +415,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-lg text-neutral-400">
-              Estamos localizados na Rua José Domingos dos Santos, 31, Puxinanã
+              Estamos localizados na Rua José Domingos dos Santos, 07, Puxinanã
               - PB, 58115-000.
             </p>
             <p className="text-lg text-neutral-400">
