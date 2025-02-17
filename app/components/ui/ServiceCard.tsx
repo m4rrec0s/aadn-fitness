@@ -4,13 +4,11 @@ interface ServiceCardProps {
   title?: string;
   description?: string;
   firstImgUrl?: string;
-  secondImgUrl?: string;
 }
 
 export function ServiceCard({
   description = "Adicione sua descrição aqui",
   firstImgUrl,
-  secondImgUrl,
   title = "Adicione seu título aqui",
 }: ServiceCardProps) {
   return (
@@ -21,14 +19,13 @@ export function ServiceCard({
         backgroundSize: "cover",
         backgroundPosition: "center",
         boxShadow: "rgba(0, 0, 0, 0.8) 16px -9px 20px 10px inset",
+        transition: "transform 0.5s ease",
       }}
       onMouseEnter={(e) => {
-        if (secondImgUrl) {
-          e.currentTarget.style.backgroundImage = `url(${secondImgUrl})`;
-        }
+        e.currentTarget.style.transform = "scale(1.1)";
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.backgroundImage = `url(${firstImgUrl})`;
+        e.currentTarget.style.transform = "scale(1)";
       }}
     >
       <div className="text relative z-50">

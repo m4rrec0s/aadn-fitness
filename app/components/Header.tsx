@@ -40,7 +40,7 @@ const Header = () => {
         </ul>
       </nav>
       <Link
-        className="px-3 py-2 border border-orange-500 rounded-full text-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-300"
+        className="px-5 py-2 border-2 border-orange-500 rounded-full text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300 shadow-lg transform hover:scale-105"
         href="#contact"
       >
         Contato

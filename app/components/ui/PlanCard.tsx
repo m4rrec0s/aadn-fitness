@@ -1,13 +1,15 @@
 "use client";
 
+import { cn } from "@/app/lib/utils";
+import Link from "next/link";
+
 interface PlanCardProps {
   title: string;
   value: string;
   secondaryValue?: string;
   description: string;
   features: string[];
-  gradientFrom?: string;
-  gradientTo?: string;
+  color?: "orange" | "blue" | "green";
 }
 
 export function PlanCard({
@@ -16,21 +18,32 @@ export function PlanCard({
   secondaryValue,
   description,
   features,
-  gradientFrom = "orange-600",
-  gradientTo = "orange-500",
+  color = "orange",
 }: PlanCardProps) {
   return (
-    <div
-      className={`w-full max-w-[400px] h-[500px] rounded-xl mx-auto border 
-        border-orange-500 bg-black 
-        bg-gradient-to-r from-${gradientFrom} to-${gradientTo} 
-        bg-origin-border`}
-      style={{ backgroundClip: "padding-box, border-box" }}
-    >
-      <div className="p-4 rounded-xl h-full flex flex-col justify-between">
+    <div className="w-[400px] h-[500px] rounded-xl bg-black neon-border">
+      <div
+        className={cn(
+          "m-1 bg-black p-4 rounded-xl h-full flex flex-col justify-between border",
+          color === "orange"
+            ? "border-orange-500"
+            : color === "blue"
+            ? "border-blue-500"
+            : "border-green-500"
+        )}
+      >
         <div className="w-full">
           <h2 className="text-2xl font-bold text-white mb-2">{title}</h2>
-          <p className="text-xl font-semibold text-orange-500">
+          <p
+            className={cn(
+              "text-xl font-semibold",
+              color === "orange"
+                ? "text-orange-500"
+                : color === "blue"
+                ? "text-blue-500"
+                : "text-green-500"
+            )}
+          >
             {value}{" "}
             <span className="text-neutral-600 text-lg">{secondaryValue}</span>
           </p>
@@ -41,13 +54,17 @@ export function PlanCard({
             ))}
           </ul>
         </div>
-        <button
+        <Link
+          href={`https://wa.me/558399014654?text=Olá,%20estou%20interessado%20no%20plano%20${encodeURIComponent(
+            title
+          )}%20-%20${encodeURIComponent(value)}`}
           type="button"
-          className="mt-4 py-2 px-4 bg-orange-500 text-white font-bold 
+          target="_blank"
+          className="mt-4 py-2 px-4 bg-orange-500 text-white font-bold text-center
           rounded-md hover:bg-orange-700 transition"
         >
           Quero esse!
-        </button>
+        </Link>
       </div>
     </div>
   );
