@@ -431,7 +431,7 @@ export default function Home() {
                 Contato
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/aadn_fitness/"
                 className="text-orange-500 hover:text-orange-700 text-2xl transition"
               >
                 <Instagram />
@@ -478,7 +478,7 @@ export default function Home() {
           </Link>
           <div className="flex space-x-6 mt-6">
             <Link
-              href="#"
+              href="https://www.instagram.com/aadn_fitness/"
               className="text-white text-2xl hover:text-gray-200 transition"
             >
               <Instagram />
