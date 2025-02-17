@@ -415,7 +415,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-lg text-neutral-400">
-              Estamos localizados na Rua José Domingos dos Santos, 07, Puxinanã
+              Estamos localizados na Rua José Domingos dos Santos, 31, Puxinanã
               - PB, 58115-000.
             </p>
             <p className="text-lg text-neutral-400">
@@ -431,7 +431,7 @@ export default function Home() {
                 Contato
               </Link>
               <Link
-                href="https://www.instagram.com/aadn_fitness/"
+                href="#"
                 className="text-orange-500 hover:text-orange-700 text-2xl transition"
               >
                 <Instagram />
@@ -478,7 +478,7 @@ export default function Home() {
           </Link>
           <div className="flex space-x-6 mt-6">
             <Link
-              href="https://www.instagram.com/aadn_fitness/"
+              href="#"
               className="text-white text-2xl hover:text-gray-200 transition"
             >
               <Instagram />
@@ -507,9 +507,9 @@ export default function Home() {
           <span className="font-bold text-white">A²DN Fitness</span>
         </div>
         <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-6 mt-4 md:mt-0">
-          <Link href="#">Perguntas Frequentes</Link>
-          <Link href="#">Termos de Uso</Link>
-          <Link href="#">Política de Privacidade</Link>
+          <Link href="/faq">Perguntas Frequentes</Link>
+          <Link href="/terms-of-use">Termos de Uso</Link>
+          <Link href="/privacy-policy">Política de Privacidade</Link>
         </div>
         <div className="mt-4 md:mt-0 text-center">
           <p>
