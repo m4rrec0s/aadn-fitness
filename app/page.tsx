@@ -375,7 +375,7 @@ export default function Home() {
             <InstructorCard
               name="Jefferson Santos"
               position="Instrutor de Musculação"
-              imageUrl=""
+              imageUrl="https://6c8fb3gvzm.ufs.sh/f/BhegMacQdV7xRmrddtFofXJpvC6rIOB1dVxlt8SkTwWjFMUq"
             />
             <InstructorCard
               name="Lais Minelli"
