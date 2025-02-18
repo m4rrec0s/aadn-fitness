@@ -385,7 +385,7 @@ export default function Home() {
             <InstructorCard
               name="Júlio Henrique"
               position="Instrutor do Funcional"
-              imageUrl=""
+              imageUrl="https://6c8fb3gvzm.ufs.sh/f/BhegMacQdV7xXxkuKy67MsQUymfzwLBAFi46cetaKRITGxho"
             />
             <InstructorCard
               name="Riquelme Santos"
@@ -431,7 +431,7 @@ export default function Home() {
                 Contato
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/aadn_fitness/"
                 className="text-orange-500 hover:text-orange-700 text-2xl transition"
               >
                 <Instagram />
@@ -463,7 +463,7 @@ export default function Home() {
         className="w-full py-16 flex items-center justify-center relative"
         id="contact"
       >
-        <div className="absolute inset-0 bg-[url('https://i.pinimg.com/736x/aa/44/1a/aa441a830b06187280a2f71756093441.jpg')] bg-cover bg-center opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('https://6c8fb3gvzm.ufs.sh/f/BhegMacQdV7xzPPNhIVZjvlI8TciJN4q5tnPaupXYhZHRUAE')] bg-cover bg-center opacity-30"></div>
         <div className="relative w-full max-w-4xl flex flex-col items-center text-center text-white p-10 rounded-lg shadow-lg">
           <h2 className="text-4xl lg:text-5xl font-bold">Entre em Contato</h2>
           <p className="text-lg max-w-2xl mt-4">
@@ -478,7 +478,7 @@ export default function Home() {
           </Link>
           <div className="flex space-x-6 mt-6">
             <Link
-              href="#"
+              href="https://www.instagram.com/aadn_fitness/"
               className="text-white text-2xl hover:text-gray-200 transition"
             >
               <Instagram />
