@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Página de Apresentação — Aadn Fitness
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-13-000000?style=flat-square&logo=nextdotjs)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 
-First, run the development server:
+## Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Esta página de apresentação foi desenvolvida para a **Aadn Fitness** [(acesse aqui)](https://aadn-fitness.vercel.app/), destacando serviços, planos, treinadores e localização da academia.  
+Ela tem layout moderno, animações suaves e conteúdo responsivo, garantindo boa usabilidade tanto em telas de desktop quanto em dispositivos móveis.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Imagem de Apresentação](public/banner.jpg)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Responsividade e Layout
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Design Responsivo**: Todos os componentes são adaptados a diferentes resoluções.
+- **Transições Visuais**: Recursos visuais simples que mantêm a identidade da academia.
+- **Layout Intuitivo**: Facilita a navegação e localização das seções importantes.
 
-## Learn More
+## Benefícios para a Academia
 
-To learn more about Next.js, take a look at the following resources:
+- **Dinâmica de Contato**: Links diretos para redes sociais e WhatsApp agilizam a comunicação.
+- **Incentivo à Matrícula**: Planos claros e recursos detalhados despertam interesse urgente no visitante.
+- **Estratégia de Marketing**: Apresentação atrativa que fortalece a imagem da marca e aumenta a captação de novos clientes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Como Executar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Instale as dependências: `npm install` ou `yarn install`
+2. Rode o servidor de desenvolvimento: `npm run dev` ou `yarn dev`
+3. Acesse em: [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+## Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto segue as diretrizes de uso definidas por seus desenvolvedores e contribuintes.
