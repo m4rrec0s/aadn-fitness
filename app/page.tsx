@@ -370,7 +370,7 @@ export default function Home() {
             <InstructorCard
               name="Alison Sousa"
               position="Instrutor de Musculação"
-              imageUrl=""
+              imageUrl="https://6c8fb3gvzm.ufs.sh/f/BhegMacQdV7x6uWnGeN8fuSIwAyMtVlakG9WErLCDYi21UnN"
             />
             <InstructorCard
               name="Jefferson Santos"
@@ -380,7 +380,7 @@ export default function Home() {
             <InstructorCard
               name="Lais Minelli"
               position="Instrutora de Musculação"
-              imageUrl="https://6c8fb3gvzm.ufs.sh/f/BhegMacQdV7x0t4ZGGQRmWT6HUGOv8iP0NnVLKt7oMhrDEYq"
+              imageUrl="https://6c8fb3gvzm.ufs.sh/f/BhegMacQdV7xTdjGtKYbZCfILMgcJAnwiSRQdT5oF8r0UvPz"
             />
             <InstructorCard
               name="Júlio Henrique"
@@ -390,7 +390,7 @@ export default function Home() {
             <InstructorCard
               name="Riquelme Santos"
               position="Estagiário"
-              imageUrl=""
+              imageUrl="https://6c8fb3gvzm.ufs.sh/f/BhegMacQdV7xmhuO80UM5KxGBZ9knzPeApvS23lbcCNWquIt"
             />
             <InstructorCard
               name="Djonathan Oliveira"
@@ -415,7 +415,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-lg text-neutral-400">
-              Estamos localizados na Rua José Domingos dos Santos, 31, Puxinanã
+              Estamos localizados na Rua José Domingos dos Santos, 07, Puxinanã
               - PB, 58115-000.
             </p>
             <p className="text-lg text-neutral-400">
